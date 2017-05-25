@@ -1,0 +1,320 @@
+/* line 1, /Users/baicheng/Documents/work/workshop/laporcelaine/app/assets/stylesheets/custom.scss */
+p {
+  color: #FFFFFF;
+}
+
+h1 {
+  color: #FFFFFF;
+}
+
+h2 {
+  color: #FFFFFF;
+}
+
+h3, time h3 {
+  color: #FFFFFF;
+}
+
+h4 {
+  color: #FFFFFF;
+}
+
+h5 {
+  color: #FFFFFF;
+}
+
+h6 {
+  color: #FFFFFF;
+}
+
+input[type="submit"]:hover, button:hover {
+  color: #FFFFFF;
+}
+
+.serif {
+  color: #0098ac;
+}
+
+.signature h6 {
+  color: #0098ac;
+}
+
+blockquote {
+  border-color: #0098ac;
+}
+
+cite, a, dl dd, ul, ol {
+  color: #0098ac;
+}
+
+.comments-area .comments-list .comments-title h5 {
+  color: #0098ac;
+}
+
+ul.price-list li .top {
+  border-color: #0098ac;
+}
+
+ul li h4, ol li h4 {
+  color: #0098ac;
+}
+
+blockquote p {
+  color: #0098ac;
+}
+
+figcaption p {
+  color: #0098ac;
+}
+
+footer section h5 {
+  color: #0098ac;
+}
+
+footer h4, h3 {
+  color: #0098ac;
+}
+
+.form form label {
+  color: #0098ac;
+}
+
+.submit button[type="submit"] {
+  border-color: #0098ac;
+}
+
+.submit button[type="submit"]:hover {
+  background-color: #0098ac;
+}
+
+.submit i::before {
+  color: #0098ac;
+}
+
+.btn {
+  color: #0098ac;
+}
+
+.description {
+  color: #0098ac;
+}
+
+time strong {
+  color: #0098ac;
+}
+
+.strokes ul li a footer h5 {
+  color: #0098ac;
+}
+
+.remodal-close::before {
+  color: #0098ac;
+}
+
+.content-wrap header h2 a {
+  color: #0098ac;
+}
+
+.tags a:hover, q {
+  background-color: #0098ac;
+}
+
+.categories a:hover {
+  background-color: #0098ac;
+}
+
+input {
+  border-color: #0098ac;
+}
+
+.submit button {
+  border-color: #0098ac;
+}
+
+.price-list .top {
+  border-color: #0098ac;
+}
+
+.more-link:hover {
+  background-color: #0098ac;
+}
+
+.pagination a:hover::before {
+  background-color: #0098ac;
+}
+
+.icon.bg {
+  background-color: #0098ac;
+}
+
+.line {
+  background-color: #0098ac;
+}
+
+.submit button:hover {
+  background-color: #0098ac;
+}
+
+.icon-list span {
+  color: #0098ac;
+}
+
+.comments-trigger a {
+  border-color: #0098ac;
+}
+
+.comments-trigger a:hover {
+  background-color: #0098ac;
+}
+
+.logged-in-as a {
+  color: #0098ac;
+}
+
+.comment-meta a {
+  color: #0098ac;
+}
+
+.reply a {
+  color: #0098ac;
+}
+
+.comments-list .comments-title h5 {
+  color: #0098ac;
+}
+
+.comments-area .comments h3 {
+  color: #0098ac;
+}
+
+.comments-area .form-submit {
+  border-color: #0098ac;
+}
+
+.comments-area .form-submit:hover {
+  background-color: #0098ac;
+}
+
+.comments-title h5 {
+  color: #0098ac;
+}
+
+.page-numbers.prev:hover, .page-numbers.next:hover {
+  color: #0098ac;
+}
+
+.comment-pagination .page-numbers.current {
+  background-color: #0098ac;
+}
+
+#splash .loader .line {
+  background-color: #0098ac;
+}
+
+.content header.with-subnav ul li.btn:hover {
+  border-color: #0098ac;
+  background-color: #0098ac;
+}
+
+.animated-loader path {
+  fill: #0098ac;
+}
+
+input[type="submit"]:hover, button:hover {
+  background-color: #0098ac;
+  border-color: #0098ac;
+}
+
+:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.badge {
+  background-color: #0098ac;
+}
+
+.badge-rounded {
+  background-color: #0098ac;
+}
+
+main .overlay {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.content-wrap {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#splash {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+header.detail.full {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#splash {
+  background-color: rgba(0, 0, 0, 0.98);
+}
+
+.page-switch-fade {
+  background-color: rgba(0, 0, 0, 0.98);
+}
+
+ul.price-list li .description {
+  color: #cccccc;
+}
+
+.strokes ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content-footer {
+  background-color: #101010;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 1, /Users/baicheng/Documents/work/workshop/laporcelaine/app/assets/stylesheets/custom.scss */
+  .always-show-logo header.frontpage {
+    background-color: transparent;
+  }
+}
+.icon:before {
+  color: white;
+}
+
+.tags span::before {
+  color: white;
+}
+
+.categories h3:before {
+  color: white;
+}
+
+.form-group i::before {
+  color: white;
+}
+
+.date-icon:before {
+  color: white;
+}
+
+.sticky:before {
+  color: white;
+}
+
+h1 {
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+}

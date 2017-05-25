@@ -674,8 +674,8 @@ blockquote p {
 ----------------------------------------------- */
 @font-face {
   font-family: 'merriweather-italic';
-  src: url('assets/fonts/merriweather-italic.eot');
-  src: local('O'), url('assets/fonts/merriweather-italic.woff') format('woff'), url('assets/fonts/merriweather-italic.ttf') format('truetype'), url('assets/fonts/merriweather-italic.svg#merriweather-italic') format('svg');
+  src: url('merriweather-italic.eot');
+  src: local('O'), url('merriweather-italic.woff') format('woff'), url('merriweather-italic.ttf') format('truetype'), url('merriweather-italic.svg#merriweather-italic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -698,8 +698,8 @@ blockquote p {
 ----------------------------------------------- */
 @font-face {
   font-family: '77-Essential-Icons';
-  src: url('assets/fonts/icons/77-Essential-Icons.eot');
-  src: url('assets/fonts/icons/77-Essential-Icons.eot?#iefix') format("embedded-opentype"), url('assets/fonts/icons/77-Essential-Icons.woff') format('woff'), url('assets/fonts/icons/77-Essential-Icons.ttf') format('truetype'), url('assets/fonts/icons/77-Essential-Icons.svg#77-Essential-Icons') format('svg');
+  src: url('icons/77-Essential-Icons.eot');
+  src: url('icons/77-Essential-Icons.eot?#iefix') format("embedded-opentype"), url('icons/77-Essential-Icons.woff') format('woff'), url('icons/77-Essential-Icons.ttf') format('truetype'), url('icons/77-Essential-Icons.svg#77-Essential-Icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }

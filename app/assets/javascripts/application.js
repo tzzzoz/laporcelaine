@@ -10,6 +10,16 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
+//= require jquery-migrate-1.4.1.min
+//= require jquery.query-object
 //= require rails-ujs
 //= require turbolinks
+//= require device
+//= require modernizr
+//= require page
+//= require utils
+//= require slidenavigation
+//= require slideshow
+//= require app
 //= require_tree .
