@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+all_dishes = Oj.load(File.read("db/seeds/dishes.json"))
+dish_attrs = %w(name desc category price)
+all_dishes.each do |category, dish_list|
+  dish_list.each do |dish_params|
+    Dish.create(dish_params.merge({"category" => category}).slice(*dish_attrs))
+  end
+end

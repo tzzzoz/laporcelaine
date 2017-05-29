@@ -4,4 +4,8 @@ class HomeController < ApplicationController
 
   def about
   end
+
+  def menu
+    @dishes = Dish.all
+  end
 end

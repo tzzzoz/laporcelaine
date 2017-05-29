@@ -1,0 +1,39 @@
+{
+  "entree": [
+    {
+      "name": "Rouleaux de riz garnis",
+      "desc": "(Crevettes, Bœuf, Porc, Légumes)",
+      "category": "entree",
+      "price": 6.00
+    },
+    {
+      "name": "Tranches de Bœuf marinées",
+      "category": "entree",
+      "price": 8.00
+    },
+    {
+      "name": "Poulet à la vapeur",
+      "desc": "Sauce chili chinoise",
+      "category": "entree",
+      "price": 9.00
+    },
+    {
+      "name": "Sheng Jian Bao",
+      "desc": "Pain farci à la vapeur et grillé",
+      "category": "entree",
+      "price": 6.00
+    },
+    {
+      "name": "Salade épicée",
+      "desc": "(Bœuf, Poulet, Fruits de Mer)",
+      "category": "entree",
+      "price": 5.50
+    },
+    {
+      "name": "Geely Crevettes",
+      "desc": "(Fri à l'huile)",
+      "category": "entree",
+      "price": 9.00
+    }
+  ]
+}
