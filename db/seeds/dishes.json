@@ -1,39 +1,139 @@
 {
   "entree": [
     {
-      "name": "Rouleaux de riz garnis",
+      "name": "Rouleaux de riz garnis 肠粉",
       "desc": "(Crevettes, Bœuf, Porc, Légumes)",
-      "category": "entree",
       "price": 6.00
     },
     {
-      "name": "Tranches de Bœuf marinées",
-      "category": "entree",
+      "name": "Tranches de Bœuf marinées 夫妻肺片",
       "price": 8.00
     },
     {
-      "name": "Poulet à la vapeur",
+      "name": "Poulet à la vapeur 口水鸡",
       "desc": "Sauce chili chinoise",
-      "category": "entree",
       "price": 9.00
     },
     {
-      "name": "Sheng Jian Bao",
+      "name": "Sheng Jian Bao 生煎包",
       "desc": "Pain farci à la vapeur et grillé",
-      "category": "entree",
       "price": 6.00
     },
     {
-      "name": "Salade épicée",
+      "name": "Salade épicée au choix 五香牛肉沙拉/鸡肉沙拉/海鲜沙拉",
       "desc": "(Bœuf, Poulet, Fruits de Mer)",
-      "category": "entree",
       "price": 5.50
     },
     {
-      "name": "Geely Crevettes",
+      "name": "Geely Crevettes 吉利虾",
       "desc": "(Fri à l'huile)",
-      "category": "entree",
       "price": 9.00
+    }
+  ],
+  "plat": [
+    {
+      "name": "Petits cubes de bœuf au Poivre noir 黑椒牛肉粒",
+      "price": 12.00
+    },
+    {
+      "name": "Pot-au-feu de bœuf 牛腩煲",
+      "price": 13.90
+    },
+    {
+      "name": "Poulet caramélisé, sauce citronnée 柠檬鸡",
+      "price": 13.90
+    },
+    {
+      "name": "Suan mei canard, sauce aux prunes 酸梅鸡",
+      "price": 14.50 
+    },
+    {
+      "name": "Ribs de Porc caramélisés 糖醋小排",
+      "price": 13.00
+    },
+    {
+      "name": "Saumon poélé au sésame 香煎三文鱼",
+      "price": 15.00
+    },
+    {
+      "name": "Côtes d’Agneau grillées suce ziran(cumin) 烤羊排",
+      "price": 16.00
+		},
+    {
+      "name": "Légumes sautés à l’anacarde (noix de cajou) 腰果炒西芹和荷兰豆",
+      "price": 9.00
+    },
+    {
+      "name": "Hamburger chinois aux choix : bœuf, Agneau 肉夹馍",
+      "price": 8.00
+    },
+    {
+      "name": "La la crevettes : crevettes sautées aux légumes, sauce épicée 香辣虾",
+      "price": 15.00
+    },
+    {
+      "name": "Jiang  nouilles à la sauce sautée 炸酱面",
+      "price": 10.50
+    }
+  ],
+  "soupe": [
+    {
+      "name": "Soupe de Pékin 酸辣汤",
+      "price": 6.00
+    },
+    {
+      "name": "Soupe de maïs 玉米汤",
+      "price": 6.00
+    }
+  ],
+  "accompagnement": [
+    {
+      "name": "Riz nature 白米饭",
+      "price": 1.50
+    },
+    {
+      "name": "Riz cantonais 炒饭",
+      "price": 2.50
+    },
+    {
+      "name": "Riz d’haricots rouges 豆饭",
+      "price": 2.00
+    }
+  ],
+  "dessert": [
+    {
+      "name": "Perles de Chine au lait de Coco 西米露",
+      "desc": "(Fruits exotiques)",
+      "price": 5.50
+    },
+    {
+      "name": "Verrine perlée au chocolat 糯米糍",
+      "price": 5.50
+    },
+    {
+      "name": "Gâteau Osmanthus au lait de coco 桂花糕",
+      "price": 5.00
+    },
+    {
+      "name": "Rouleaux de Taro sauce caramel et chocolat 芋头甜圈",
+      "price": 5.90
+    },
+    {
+      "name": "Salade de fruits (fruits de saison)",
+      "desc": "(Fruits exotiques)",
+      "price": 6.00
+    },
+    {
+      "name": "Boules de glaces (3 parfums aux choix)",
+      "price": 8.00
+    },
+    {
+      "name": "Thé goumand",
+      "price": 8.00
+    },
+    {
+      "name": "Café goumand",
+      "price": 8.00
     }
   ]
 }
