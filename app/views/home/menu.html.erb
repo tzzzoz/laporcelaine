@@ -1,0 +1,32 @@
+<header class="detail">
+  <%= link_to root_path, class: "back", "data-transition" => "slide-from-top" do %>
+    <h1>Home</h1>
+  <% end %>
+  <section>
+    <h1>MENU</h1>
+    <h3 class="badge">Nos plats et nos menus</h3>
+  </section>
+</header>
+<div class="content-wrap">
+  <div class="content">
+    <section>
+      <header class="with-subnav">
+        <%= unordered_list(@categories) do |category| %>
+          <% content_tag(:li, nil, class: "btn#{" active" if category == @category}") do %>
+            <% link_to(menu_path(category.symbol), "data-transition" => "slide-left") do %>
+              <h4><%= category.name.pluralize %></h4>
+            <% end %>
+          <% end %>
+        <% end %>
+        <p></p>
+      </header>
+      <header>
+        <h3 class="badge"><%= @category.name.pluralize %></h3>
+      </header>
+      <footer></footer>
+    </section>
+  </div>
+  <div class="content-footer">
+    <p>Power by Bootstrap - Copyright 2017 All Right Reserved</p>
+  </div>
+</div>

@@ -6,6 +6,8 @@ class HomeController < ApplicationController
   end
 
   def menu
-    @dishes = Dish.all
+    @categories = Category.all
+    category = params['category']
+    @category = Category.find_by(symbol: category) || Category.first
   end
 end
