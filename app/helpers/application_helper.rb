@@ -1,8 +1,8 @@
 module ApplicationHelper
-  def slideshow_list(images)
-    content_tag(:ul, id: "slideshow") do
-      images.collect do |img_src|
-        concat content_tag(:li, nil) { image_tag(img_src, alt: "slideshow image") }
+  def unordered_list(items, id: nil)
+    content_tag(:ul, id: id) do
+      items.collect do |item|
+        concat yield(item)
       end
     end
   end
