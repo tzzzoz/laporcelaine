@@ -22,6 +22,8 @@
         <%= yield %>
       </main>
     </div>
-    <%= slideshow_list(slideshow_images) %>
+    <%= unordered_list(slideshow_images, id: 'slideshow') do |img_src| %>
+      <% image_tag(img_src, alt: "slideshow image") %>
+    <% end %>
   </body>
 </html>
