@@ -1,6 +1,6 @@
 module ApplicationHelper
-  def unordered_list(items, id: nil)
-    content_tag(:ul, id: id) do
+  def unordered_list(items, options = {})
+    content_tag(:ul, options) do
       items.collect do |item|
         concat yield(item)
       end

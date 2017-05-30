@@ -23,6 +23,15 @@
       <header>
         <h3 class="badge"><%= @category.name.pluralize %></h3>
       </header>
+      <%= unordered_list(@category.dishes, class: 'price-list') do |dish| %>
+        <% content_tag(:li, nil) do %>
+          <div class="top">
+            <h3 class="title"><%= dish.name %></h3>
+            <h4 class="price badge"><%= dish.price %>€</h4>
+          </div>
+          <p class="description"><%= dish.desc %></p>
+        <% end %>
+      <% end %>
       <footer></footer>
     </section>
   </div>
