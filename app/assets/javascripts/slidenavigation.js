@@ -18,7 +18,7 @@ function Slidenavigation (navigation) {
     var windowWidth         = $(window).width(),
         list                = navigation.find('li'),
         totalWidth          = calculateWidth(list),
-        scrollDifference    = totalWidth - windowWidth;
+        scrollDifference    = windowWidth > 768 ? totalWidth - windowWidth : 0;
 
     $('.strokes').css({'overflow-x' : 'hidden'});
 

@@ -113,7 +113,7 @@ xheader
 	right: -100%;
 	background: #FFF;
 
-	@include transition(right .3s);
+	transition: right 0.3s;
 
 	&.speed-in {
 		right: 0;
@@ -235,7 +235,7 @@ xheader
 
 	&.is-visible {
 		display: block;
-		@include animation(cd-fade-in .3s);
+		animation: cd-fade-in 0.3s;
 	}
 }
 

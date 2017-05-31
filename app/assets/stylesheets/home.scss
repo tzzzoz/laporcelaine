@@ -3579,11 +3579,13 @@ ul.price-list li .top .title {
     width: 480px;
   }
 }
-ul.price-list li .top .price {
+ul.price-list li .top .right {
+  float: right;
+}
+ul.price-list li .top .right .price {
   font-size: 14px;
   font-size: 1.4rem;
   color: #FFFFFF;
-  float: right;
   margin: 0;
 }
 ul.price-list li .description {
