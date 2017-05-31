@@ -3569,6 +3569,16 @@ ul.price-list li .top .title {
     width: 480px;
   }
 }
+@media only screen and (min-width: 514px) and (max-width: 620px) {
+  ul.price-list li .top .title {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 620px) and (max-width: 768px) {
+  ul.price-list li .top .title {
+    width: 400px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   ul.price-list li .top .title {
     width: 450px;
@@ -3576,7 +3586,7 @@ ul.price-list li .top .title {
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape), only screen and (min-width: 1025px) {
   ul.price-list li .top .title {
-    width: 480px;
+    width: 430px;
   }
 }
 ul.price-list li .top .right {
