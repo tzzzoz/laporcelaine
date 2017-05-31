@@ -27,7 +27,8 @@
         <% content_tag(:li, nil) do %>
           <div class="top">
             <h3 class="title"><%= dish.name %></h3>
-            <h4 class="price badge"><%= dish.price %>€</h4>
+            <h4 class="price badge"><%= '%0.2f' % dish.price %>€</h4>
+            <div class="btn">""</div>
           </div>
           <p class="description"><%= dish.desc %></p>
         <% end %>
