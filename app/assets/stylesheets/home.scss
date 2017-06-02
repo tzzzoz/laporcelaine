@@ -3523,7 +3523,7 @@ ul.icon-list li a i.icon-social:before {
     font-size: 1.8rem;
   }
 }
-ul.price-list {
+ul#price-list {
   /* 14.4: The price menu shown on the menu page */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3533,27 +3533,27 @@ ul.price-list {
   max-width: 650px;
 }
 @media only screen and (max-width: 667px) and (orientation : landscape) {
-  ul.price-list {
+  ul#price-list {
     margin: 30px auto;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  ul.price-list {
+  ul#price-list {
     margin: 20px auto;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px), only screen and (min-width: 1025px) {
-  ul.price-list {
+  ul#price-list {
     margin: 20px auto;
   }
 }
-ul.price-list li {
+ul#price-list li {
   margin-bottom: 35px;
 }
-ul.price-list li .top {
+ul#price-list li .top {
   border-bottom: 1px dashed #6c9bae;
 }
-ul.price-list li .top .title {
+ul#price-list li .top .title {
   font-size: 20px;
   font-size: 2rem;
   line-height: 35px;
@@ -3565,40 +3565,40 @@ ul.price-list li .top .title {
   overflow: hidden;
 }
 @media only screen and (max-width: 667px) and (orientation : landscape) {
-  ul.price-list li .top .title {
+  ul#price-list li .top .title {
     width: 480px;
   }
 }
 @media only screen and (min-width: 514px) and (max-width: 620px) {
-  ul.price-list li .top .title {
+  ul#price-list li .top .title {
     width: 300px;
   }
 }
 @media only screen and (min-width: 620px) and (max-width: 768px) {
-  ul.price-list li .top .title {
+  ul#price-list li .top .title {
     width: 400px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  ul.price-list li .top .title {
+  ul#price-list li .top .title {
     width: 450px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape), only screen and (min-width: 1025px) {
-  ul.price-list li .top .title {
+  ul#price-list li .top .title {
     width: 430px;
   }
 }
-ul.price-list li .top .right {
+ul#price-list li .top .right {
   float: right;
 }
-ul.price-list li .top .right .price {
+ul#price-list li .top .right .price {
   font-size: 14px;
   font-size: 1.4rem;
   color: #FFFFFF;
   margin: 0;
 }
-ul.price-list li .description {
+ul#price-list li .description {
   font-size: 13px;
   font-size: 1.3rem;
   font-family: 'merriweather-italic', serif;
@@ -3608,7 +3608,7 @@ ul.price-list li .description {
   margin: 15px 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation : landscape), only screen and (min-width: 1025px) {
-  ul.price-list li .description {
+  ul#price-list li .description {
     font-size: 13px;
     font-size: 1.3rem;
   }

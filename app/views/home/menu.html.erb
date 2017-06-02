@@ -23,13 +23,13 @@
       <header>
         <h3 class="badge"><%= @category.name.pluralize %></h3>
       </header>
-      <%= unordered_list(@category.dishes, class: 'price-list') do |dish| %>
-        <% content_tag(:li, nil) do %>
+      <%= unordered_list(@category.dishes, id: 'price-list') do |dish| %>
+        <% content_tag(:li, nil, "data-item-id": dish.id) do %>
           <div class="top">
             <h3 class="title"><%= dish.name %></h3>
             <div class="right">
               <h4 class="price badge"><%= '%0.2f' % dish.price %>€</h4>
-              <i class="icon icon-Plus"></i>
+              <i class="icon icon-Plus add-to-cart"></i>
             </div>
           </div>
           <p class="description"><%= dish.desc %></p>
