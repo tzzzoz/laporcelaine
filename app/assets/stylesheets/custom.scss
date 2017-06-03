@@ -131,7 +131,7 @@ input {
   border-color: #0098ac;
 }
 
-.price-list .top {
+#price-list .top {
   border-color: #0098ac;
 }
 
@@ -273,10 +273,11 @@ header.detail.full {
   background-color: rgba(0, 0, 0, 0.98);
 }
 
-ul.price-list li .add-to-cart {
+ul#price-list li .add-to-cart {
   float: right;
+  cursor: pointer;
 }
-ul.price-list li .description {
+ul#price-list li .description {
   color: #cccccc;
 }
 

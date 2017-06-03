@@ -18,7 +18,7 @@
     init: function() {
       'use strict';
 
-      this.storage = sessionStorage;
+      this.storage = localStorage;
       this.total = this.prefix +  'total';
       this.currency = '&euro;';
       this.currencyString = '€';
@@ -45,7 +45,18 @@
       this.$shadowLayer.on('click', function() {
         event.preventDefault();
         self.toggleShadowLayer();
-      })
+      });
+
+      this.$cartItems.find('li').each(function () {
+        var $item = $(this);
+        console.log($item);
+        var product_id = $item.data().itemId;
+      
+        $item.find('.cd-item-remove').on('click', function() {
+          event.preventDefault();
+          self.deleteProduct(product_id);
+        });
+      });
     },
 
     createCart: function() {
@@ -66,7 +77,7 @@
         var items = cart.items;
         for(var product_id in items) {
           var item = items[product_id];
-          this._renderItem(product_id, item);
+          this._renderNewItem(product_id, item);
         }
         this._renderTotal();
       }
@@ -121,10 +132,18 @@
           var total = parseFloat(self.storage.getItem(self.total)) + subTotal;
           self._addToCart(product_id, item);
           self.storage.setItem(self.total, total);
-
-          self._renderItem(product_id, item);
         });
       });
+    },
+    deleteProduct: function(product_id) {
+      console.log(product_id);
+      var cart = this.storage.getItem(this.cardName);
+      var cartObject = this._toJSONObject(cart);
+      delete cartObject.items[product_id];
+      this.storage.setItem(this.cardName, this._toJSONString(cartObject));
+
+      var $cartItem = this.$cartItems.find(`li[data-item-id='${product_id}']`);
+      $cartItem.remove();
     },
 
     // ---------------------------------------------------
@@ -142,31 +161,44 @@
       var cart = this.storage.getItem(this.cardName);
 
       var cartObject = this._toJSONObject(cart);
-      var cartCopy = cartObject;
-      var items = cartCopy.items;
+      var items = cartObject.items;
       var qty = item.qty;
       var existing_item = items[product_id];
       if (existing_item) {
         // product exists, add qty
         existing_item.qty += qty;
+        this._updateItem(product_id, existing_item);
       } else {
         // product doesn't exist, add item to items
         delete item.id;
         items[product_id] = item;
+        self._renderNewItem(product_id, item);
       }
 
-      this.storage.setItem(this.cardName, this._toJSONString(cartCopy));
+      this.storage.setItem(this.cardName, this._toJSONString(cartObject));
     },
-    _renderItem: function(product_id, item) {
-      // Todo, check if item is presenting in UI
-      var product = item.product;
-      var priceString = item.price * item.qty + this.currencyString;
+    _updateItem: function(product_id, item) {
+      var $cartItem = this.$cartItems.find(`li[data-item-id='${product_id}']`);
       var qtyString = item.qty + 'x ';
-      var cartItem = $("<li>", {text: product, "data-item-id": product_id});
-      cartItem.prepend($("<span>", {class: 'cd-qty', text: qtyString}));
-      cartItem.append($("<div>", {class: 'cd-price', text: priceString}));
-      cartItem.append($('<a href="#0", class="cd-item-remove cd-img-replace">Remove</a>'));
-      this.$cartItems.append(cartItem);
+      var subtotalString = item.price * item.qty + this.currencyString;
+      $cartItem.find(".cd-qty").text(qtyString);
+      $cartItem.find(".cd-price").text(subtotalString);
+    },
+    _renderNewItem: function(product_id, item) {
+      var self = this;
+      var product = item.product;
+      var subtotalString = item.price * item.qty + this.currencyString;
+      var qtyString = item.qty + 'x ';
+      var $cartItem = $("<li>", {text: product, "data-item-id": product_id});
+      $cartItem.prepend($("<span>", {class: 'cd-qty', text: qtyString}));
+      $cartItem.append($("<div>", {class: 'cd-price', text: subtotalString}));
+      var $itemRemove = $('<a class="cd-item-remove cd-img-replace">Remove</a>');
+      $itemRemove.on('click', function() {
+        event.preventDefault();
+        self.deleteProduct(product_id);
+      });
+      $cartItem.append($itemRemove);
+      this.$cartItems.append($cartItem);
     },
     _renderTotal: function() {
       var total_string = this.storage.getItem(this.total) + ' ' + this.currencyString;
