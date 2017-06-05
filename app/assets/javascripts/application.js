@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery-migrate-1.4.1.min
 //= require jquery.query-object
+//= require collapse.min.js
 //= require rails-ujs
 //= require turbolinks
 //= require device

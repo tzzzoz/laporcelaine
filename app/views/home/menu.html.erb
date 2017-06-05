@@ -33,6 +33,9 @@
             </div>
           </div>
           <p class="description"><%= dish.desc %></p>
+          <div class="collapse">
+            <%= image_tag("/upload/menus/dish-#{dish.id % 5}.jpg") %>
+          </div>
         <% end %>
       <% end %>
       <footer></footer>

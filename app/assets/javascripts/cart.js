@@ -115,7 +115,6 @@
       self.$priceList.find('li').each(function() {
         var $item = $(this);
         $item.find('i.add-to-cart').on('click', function() {
-          console.log('add click');
           var product_id = $item.data().itemId;
           var product = $item.find('.title').text(); 
           var price = parseFloat($item.find('.price').text());
@@ -125,13 +124,13 @@
             price: price,
             qty: qty
           };
-          console.log("item");
-          console.log(item);
 
           var subTotal = qty * price;
           var total = parseFloat(self.storage.getItem(self.total)) + subTotal;
           self._addToCart(product_id, item);
           self.storage.setItem(self.total, total);
+
+          self.toggleCart();
         });
       });
     },

@@ -290,6 +290,11 @@
                     });
             }
 
+            if ($("#price-list").length > 0) {
+              console.log("init pricelist");
+              App.initPriceList();
+            }
+
             /* Transition action */
             $('a', '#wrapper').on('click', function (e) {
                 var $el = $(this);
@@ -443,6 +448,19 @@
 
                 gallery.init();
             }
+        },
+        initPriceList: function () {
+            var $priceList = $("#price-list");
+            $priceList.find("li").each(function(index) {
+              var $item = $(this);
+              if (index == 0) {
+                $item.find(".collapse").addClass("in");
+              }
+              $item.find(".top .title").on("click", function() {
+                console.log("collapse");
+                $item.find(".collapse").collapse("toggle");
+              })
+            });
         },
 
         background: function () {
