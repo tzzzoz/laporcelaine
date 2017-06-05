@@ -37,8 +37,18 @@ Modules - reusable parts of our design
 xheader 
 
 -------------------------------- */
+.cd-cart-top {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background: darken($header-bg, 5%) no-repeat center center;
 
-#cd-hamburger-menu, #cd-cart-trigger {
+  @include MQ(L) {
+    height: 80px;
+  }
+}
+
+.cd-hamburger-menu, #cd-cart-trigger {
 	position: absolute;
 	top: 0;
 	height: 100%;
@@ -49,23 +59,11 @@ xheader
 	}
 }
 
-#cd-hamburger-menu {
-	left: 0;
-
-	a {
-		background: darken($header-bg, 5%) url('cart/cd-hamburger-menu.svg') no-repeat center center;
-	}
-
-	@include MQ(L) {
-		display: none;
-	}
-}
-
 #cd-cart-trigger {
 	right: 0;
 
 	a {
-		background: darken($header-bg, 5%) url('cart/cd-cart.svg') no-repeat center center;
+		background: url('cart/cd-cart.svg') no-repeat center center;
 	}
 
 	@include MQ(L) {
@@ -76,7 +74,7 @@ xheader
 			position: relative;
 			width: 100px;
 			border-left: none;
-			background-color: darken($header-bg, 5%);
+			background-color: transparent;
 		}
 	}
 }
@@ -88,7 +86,7 @@ xheader
 	width: 260px;
 
 	/* header height */
-	padding-top: 50px; 
+	// padding-top: 50px;
 
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
@@ -105,7 +103,7 @@ xheader
 		width: 30%;
 
 		/* header height has changed */
-		padding-top: 80px; 
+		// padding-top: 80px;
 	}
 }
 
@@ -128,6 +126,7 @@ xheader
 		font-weight: bold;
 		text-transform: uppercase;
 		margin: 1em 0;
+    color: #333;
 	}
 
 	#cd-cart-items {

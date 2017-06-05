@@ -6,8 +6,8 @@
 }
 
 @mixin font-size($size) {
-  font-size: $size;
   font-size: calculateRem($size);
+  font-size: $size;
 }
 
 // center vertically and/or horizontally an absolute positioned element
