@@ -29,16 +29,16 @@
     <div id="cd-cart">
       <header class="cd-cart-top"> </header>
       <h2>Cart</h2>
-      <ul id="cd-cart-items">
-      </ul> <!-- cd-cart-items -->
+      <%= form_tag checkout_path, method: 'POST' do %>
+        <ul id="cd-cart-items">
+        </ul> <!-- cd-cart-items -->
 
-      <div id="cd-cart-total">
-        <p>Total <span>0€</span></p>
-      </div> <!-- cd-cart-total -->
+        <div id="cd-cart-total">
+          <p>Total <span>0€</span></p>
+        </div> <!-- cd-cart-total -->
 
-      <a href="#0" class="checkout-btn">Checkout</a>
-
-      <p class="cd-go-to-cart"><a href="#0">Go to cart page</a></p>
+        <%= submit_tag("Checkout", class: "checkout-btn") %>
+      <% end %>
     </div> <!-- cd-cart -->
 
     <%= unordered_list(slideshow_images, id: 'slideshow') do |img_src| %>
@@ -46,5 +46,8 @@
         <% image_tag(img_src, alt: "slideshow image") %>
       <% end %>
     <% end %>
+    <script type="text/javascript">
+      var railsVars = {"ajaxOn": true};
+    </script>
   </body>
 </html>

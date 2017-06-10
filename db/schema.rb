@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170530201411) do
+ActiveRecord::Schema.define(version: 20170605161757) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,5 +32,28 @@ ActiveRecord::Schema.define(version: 20170530201411) do
     t.index ["category_id"], name: "index_dishes_on_category_id"
   end
 
+  create_table "orders", force: :cascade do |t|
+    t.text "items", default: [], array: true
+    t.json "address"
+    t.json "contact"
+    t.float "subtotal"
+    t.float "total"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_orders_on_user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email"
+    t.string "title"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "phone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   add_foreign_key "dishes", "categories"
+  add_foreign_key "orders", "users"
 end

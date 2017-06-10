@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  post 'checkout', to: 'orders#new', as: 'checkout'
+  get 'orders/index'
+  post 'orders', to: 'orders#create'
+
   get '/', to: 'home#index'
   root 'home#index'
 
