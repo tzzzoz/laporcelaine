@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery-migrate-1.4.1.min
 //= require jquery.query-object
-//= require collapse.min.js
+//= require collapse.min
 //= require rails-ujs
 //= require turbolinks
 //= require device
@@ -22,5 +22,7 @@
 //= require utils
 //= require slidenavigation
 //= require slideshow
+//= require cart
 //= require app
+//= require validate.min
 //= require_tree .

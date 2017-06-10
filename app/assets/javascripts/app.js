@@ -41,6 +41,7 @@
         slideShowIndex: 0,
         modal: null,
         videoInstance: null,
+        cart: null,
 
         init: function () {
             /* Strict mode */
@@ -63,6 +64,9 @@
 
             /* Initialize the background player */
             this.background();
+
+            /* Initialize Cart */
+            this.cart = Cart.init();
 
             if (this.isAjaxOn()) {
                 $('body').addClass('is-ajax');
@@ -291,8 +295,8 @@
             }
 
             if ($("#price-list").length > 0) {
-              console.log("init pricelist");
               App.initPriceList();
+              this.cart.handleAddToCart();
             }
 
             /* Transition action */
@@ -457,7 +461,6 @@
                 $item.find(".collapse").addClass("in");
               }
               $item.find(".top .title").on("click", function() {
-                console.log("collapse");
                 $item.find(".collapse").collapse("toggle");
               })
             });
@@ -514,7 +517,7 @@
             }
         },
         isAjaxOn: function () {
-            return true;
+            return typeof railsVars != 'undefined' && railsVars.ajaxOn == true;
         },
         isTransitionSupported: function () {
             return VagebondUtils.detectCssFeature('transition');
