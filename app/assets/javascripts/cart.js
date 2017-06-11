@@ -42,16 +42,6 @@
         self.toggleShadowLayer();
       });
 
-      this.$cartItems.find('li').each(function () {
-        var $item = $(this);
-        var product_id = $item.data().itemId;
-      
-        $item.find('.cd-item-remove').on('click', function(e) {
-          e.preventDefault();
-          self.deleteProduct(product_id);
-        });
-      });
-
       return Cart;
     },
 
@@ -127,6 +117,7 @@
           var total = parseFloat(self.storage.getItem(self.total)) + subTotal;
           self._addToCart(product_id, item);
           self.storage.setItem(self.total, total);
+          self._renderTotal();
 
           self.toggleCart();
         });
@@ -135,11 +126,16 @@
     deleteProduct: function(product_id) {
       var cart = this.storage.getItem(this.cardName);
       var cartObject = this._toJSONObject(cart);
+      var subTotal = cartObject.items[product_id].price;
+      var total = parseFloat(self.storage.getItem(self.total)) - subTotal;
       delete cartObject.items[product_id];
+
       this.storage.setItem(this.cardName, this._toJSONString(cartObject));
+      this.storage.setItem(this.total, total);
 
       var $cartItem = this.$cartItems.find(`li[data-item-id='${product_id}']`);
       $cartItem.remove();
+      this._renderTotal();
     },
 
     // ---------------------------------------------------
