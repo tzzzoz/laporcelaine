@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 20170605161757) do
   end
 
   create_table "orders", force: :cascade do |t|
-    t.text "items", default: [], array: true
+    t.json "items"
     t.json "address"
     t.json "contact"
     t.float "subtotal"
