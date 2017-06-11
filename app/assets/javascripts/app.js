@@ -65,9 +65,12 @@
             /* Initialize the background player */
             this.background();
 
+            this.setupAjax();
             /* Initialize Cart */
             this.cart = Cart.init();
+        },
 
+        setupAjax: function() {
             if (this.isAjaxOn()) {
                 $('body').addClass('is-ajax');
                 $('main').removeClass('hide');
