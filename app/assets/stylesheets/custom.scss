@@ -285,8 +285,14 @@ ul#price-list li .description {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.content {
+  margin-bottom: 40px;
+}
 .content-footer {
   background-color: #101010;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -321,4 +327,21 @@ ul#price-list li .description {
 
 h1 {
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.right-btn {
+  float: right;
+}
+.simple-form {
+  overflow: hidden;
+  input {
+    padding: 10px 50px 10px 20px;
+    margin: 2px 0;
+  }
+}
+.dark-wrapper main {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.dark-wrapper label {
+  color: #ddd;
 }

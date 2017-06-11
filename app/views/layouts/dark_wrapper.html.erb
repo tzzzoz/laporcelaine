@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Laporcelaine</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="wrapper" class="dark-wrapper">
+      <main>
+        <header class="frontpage">
+          <%= link_to root_path, class: 'logo' do %>
+            <h1>Home</h1>
+            <%= image_tag('logo.png') %>
+          <% end %>
+        </header>
+        <div class="content-wrapper">
+          <div class="content">
+            <%= yield %>
+          </div>
+          <div class="content-footer">
+            <p>Power by Bootstrap - Copyright 2017 All Right Reserved</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <%= unordered_list(slideshow_images, id: 'slideshow') do |img_src| %>
+      <% content_tag(:li, nil) do %>
+        <% image_tag(img_src, alt: "slideshow image") %>
+      <% end %>
+    <% end %>
+    <script type="text/javascript">
+      var validator = new FormValidator('new-order', [{
+          name: 'address1',
+          display: 'Adresse ligne 1',
+          rules: 'required'
+      }, {
+          name: 'city',
+          display: 'Ville',
+          rules: 'required'
+      }, {
+          name: 'postcode',
+          display: 'Code postal',
+          rules: 'required|numeric'
+      }, {
+          names: 'first_name',
+          display: 'Prénom',
+          rules: 'required|alpha'
+      }, {
+          names: 'last_name',
+          display: 'Nom',
+          rules: 'required|alpha'
+      }, {
+          name: 'phone',
+          display: 'Téléphone',
+          rules: 'required|alpha_numeric'
+      }, {
+          name: 'email',
+          display: 'Email',
+          rules: 'required|valid_email'
+      }], function(errors, event) {
+          var $errorBox = $('.error-box');
+          $errorBox.empty();
+          if (errors.length > 0) {
+              console.log("error");
+              var errorString = '';
+              for (var i = 0, errorLength = errors.length; i < errorLength; i++) {
+                var message = "<i class='icon icon-Warning'>" + errors[i].message + "</i><br/>";
+                errorString += message;
+              }
+              $errorBox.append(errorString);
+              $errorBox.fadeIn(200);
+          }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<div class="content-wrapper">
+  <div class="content">
+    <%= form_tag(auth_path, class: 'simple-form') do %>
+      <h2>Vous identifier</h2>
+      <%= label_tag :email %>
+      <%= text_field_tag :email %>
+      <%= label_tag :phone %>
+      <%= text_field_tag :phone %>
+      <%= submit_tag("Se connecter", class: 'right-btn') %>
+    <% end %>
+  </div>
+</div>

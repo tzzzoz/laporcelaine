@@ -28,13 +28,14 @@
     <div id="cd-shadow-layer"></div>
     <div id="cd-cart">
       <header class="cd-cart-top"> </header>
-      <h2>Cart</h2>
+      <h2>Panier</h2>
       <%= form_tag checkout_path, method: 'POST' do %>
         <ul id="cd-cart-items">
         </ul> <!-- cd-cart-items -->
 
         <div id="cd-cart-total">
-          <p>Total <span>0€</span></p>
+          <h2>Total <span>0€</span></h2>
+          <input type="hidden" name="order[total]" value="0">
         </div> <!-- cd-cart-total -->
 
         <%= submit_tag("Checkout", class: "checkout-btn") %>
