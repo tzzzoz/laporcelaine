@@ -182,6 +182,8 @@
       var subtotalString = item.price * item.qty + this.currencyString;
       var qtyString = item.qty + 'x ';
       var $cartItem = $("<li>", {"data-item-id": product_id});
+      var $hiddenProductIdField = $("<input>", {type: 'hidden', name: 'order[items][][product_id]', value: product_id});
+      $cartItem.append($hiddenProductIdField);
       var $qtyField = $("<span>", {class: 'cd-qty', text: qtyString, name: 'order[items][][qty]'});
       var $hiddenQtyField = $("<input>", {type: 'hidden', name: 'order[items][][qty]', value: item.qty});
       $cartItem.append($qtyField).append($hiddenQtyField);
@@ -200,7 +202,9 @@
       this.$cartItems.append($cartItem);
     },
     _renderTotal: function() {
+      var total = this.storage.getItem(this.total);
       var total_string = this.storage.getItem(this.total) + ' ' + this.currencyString;
       this.$cartTotal.find('span').text(total_string);
+      this.$cartTotal.find('input').val(total);
     }
   };
