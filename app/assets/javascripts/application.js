@@ -26,4 +26,8 @@
 //= require masonry.min
 //= require app
 //= require validate.min
+//= require pickadate/picker
+//= require pickadate/picker.date
+//= require pickadate/picker.time
+//= require pickadate/fr_FR
 //= require_tree .

@@ -1,0 +1,27 @@
+<header class="detail">
+  <%= link_to root_path, class: "back", "data-transition" => "slide-from-top" do%>
+    <h1>Home</h1>
+  <% end %>
+  <section>
+    <h1>Réservation</h1>
+    <h3 class="badge">Réservez en ligne</h3>
+  </section>
+</header>
+<div class="content-wrap">
+  <div class="content">
+    <section>
+      <div class="left">
+        <i class="icon icon-Users"></i>
+        <h3 class="badge">Nombre de presonnes</h3>
+      </div>
+      <%= unordered_list(1..8, class: "num-list") do |num| %>
+        <% content_tag(:li, nil, class: "btn num-btn") do %>
+          <button><%= num %></button>
+        <% end %>
+      <% end %>
+      <div>
+        <input type="text" class="datepicker">
+      </div>
+    </section>
+  </div>
+</div>
