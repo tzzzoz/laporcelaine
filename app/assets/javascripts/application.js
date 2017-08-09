@@ -23,6 +23,7 @@
 //= require slidenavigation
 //= require slideshow
 //= require cart
+//= require masonry.min
 //= require app
 //= require validate.min
 //= require_tree .

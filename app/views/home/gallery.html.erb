@@ -1,0 +1,19 @@
+<header class="detail full">
+  <%= link_to root_path, class: "back", "data-transition" => "slide-from-top" do %>
+    <h1>Home</h1>
+  <% end %>
+  <section>
+    <h1>GALERIE</h1>
+    <h3 class="badge">Le Restaurant en Image</h3>
+  </section>
+</header>
+<div class="content-wrap full-width">
+  <i class="icon bg icon-View"></i>
+  <section>
+    <div class="grid">
+      <%= @photos.each do |photo| %>
+        <div class="grid-item"></div>
+      <% end %>
+    </div>
+  </section>
+</div>

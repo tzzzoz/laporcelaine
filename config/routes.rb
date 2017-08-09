@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get 'about', to: 'home#about'
   get 'menu', to: 'home#menu', as: 'default_menu'
   get 'menu/:category', to: 'home#menu', as: 'menu'
+  get 'gallery', to: 'home#gallery', as: 'gallery'
+  get 'book', to: 'home#book', as: 'book'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

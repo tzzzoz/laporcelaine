@@ -280,7 +280,28 @@ ul#price-list li .add-to-cart {
 ul#price-list li .description {
   color: #cccccc;
 }
+ul.num-list {
+  padding-left: 0px;
 
+  li.num-btn {
+    width: 10%;
+    padding: 0;
+
+    button {
+      color: #4e4e56;
+      width: 100%;
+      height: 32px;
+      background: #fff;
+      border: 0;
+      border-radius: 3px;
+      padding: 0;
+      line-height: 14px;
+      font-weight: 600;
+      box-shadow: 0 1px 0 0 #c5c5ca;
+      transition: box-shadow .3s; 
+    }
+  }
+}
 .strokes ul li a:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }

@@ -1,139 +1,81 @@
 {
   "entree": [
     {
-      "name": "Rouleaux de riz garnis 肠粉",
-      "desc": "(Crevettes, Bœuf, Porc, Légumes)",
-      "price": 6.00
+      "name": "Wok pâtes de riz Cantonais et légumes (Spécialité de la province de GangDong)",
+      "desc": "Pâtes de riz cuitent à la vapeur puis sautées au wok à feu vif accompagnées de ses légumes croquants (sauce soja maison)",
+      "price": 7.00
     },
     {
-      "name": "Tranches de Bœuf marinées 夫妻肺片",
+      "name": "Poulet à la vapeur (Spécialité de la province de SiChuan)",
+      "desc": "Poulet cuit a la vapeur texture fine et lisse avec deux sauces différentes Pimentée (sauce soja, huile de sésame, poivre de SiChuan, poudres de chili), ou non pimentée (Gingembre, oignon et ail)",
       "price": 8.00
     },
     {
-      "name": "Poulet à la vapeur 口水鸡",
-      "desc": "Sauce chili chinoise",
-      "price": 9.00
-    },
-    {
-      "name": "Sheng Jian Bao 生煎包",
-      "desc": "Pain farci à la vapeur et grillé",
-      "price": 6.00
-    },
-    {
-      "name": "Salade épicée au choix 五香牛肉沙拉/鸡肉沙拉/海鲜沙拉",
-      "desc": "(Bœuf, Poulet, Fruits de Mer)",
-      "price": 5.50
-    },
-    {
-      "name": "Geely Crevettes 吉利虾",
-      "desc": "(Fri à l'huile)",
-      "price": 9.00
+      "name": "Dimsum (Spécialité de la province de GuangDong)",
+      "desc": "Réalisé à partir d'une fine pâte (farine, œufs, eau et sel) garnie de crevette et frit au wok",
+      "price": 7.00
     }
   ],
   "plat": [
     {
-      "name": "Petits cubes de bœuf au Poivre noir 黑椒牛肉粒",
-      "price": 12.00
-    },
-    {
-      "name": "Pot-au-feu de bœuf 牛腩煲",
-      "price": 13.90
-    },
-    {
-      "name": "Poulet caramélisé, sauce citronnée 柠檬鸡",
-      "price": 13.90
-    },
-    {
-      "name": "Suan mei canard, sauce aux prunes 酸梅鸡",
-      "price": 14.50 
-    },
-    {
-      "name": "Ribs de Porc caramélisés 糖醋小排",
-      "price": 13.00
-    },
-    {
-      "name": "Saumon poélé au sésame 香煎三文鱼",
+      "name": "Rouleaux de riz garnis 肠粉",
+      "desc": "Un fin rouleau à base de pate de riz, garni avec du porc, accompagné d'une sauce soja maison",
       "price": 15.00
     },
     {
-      "name": "Côtes d’Agneau grillées suce ziran(cumin) 烤羊排",
-      "price": 16.00
-		},
-    {
-      "name": "Légumes sautés à l’anacarde (noix de cajou) 腰果炒西芹和荷兰豆",
-      "price": 9.00
+      "name": "Poulet caramélisé , Sauce citronnée (Spécialité de la province de GuangDong)",
+      "desc": "Poulet frit accompagné d'une sauce sucrée et citronnée",
+      "price": 15.90
     },
     {
-      "name": "Hamburger chinois aux choix : bœuf, Agneau 肉夹馍",
-      "price": 8.00
+      "name": "Saumon poêlé (Spécialité de la province de GuangDong)",
+      "desc": "Saumon poêlé accompagné de légumes grillés et de sa sauce soja maison",
+      "price": 21.00
     },
     {
-      "name": "La la crevettes : crevettes sautées aux légumes, sauce épicée 香辣虾",
+      "name": "Pita Chinois (Spécialité de la province de ShanXi)",
+      "desc": "Agneau mariné puis rôti au four, inséré dans un pain grillé",
+      "price": 14.00
+    },
+    {
+      "name": "Ribs d’agneau grillées (spécialité de Mongolie)",
+      "desc": "Viande marinée dans une soupe composée d'un jus de légumes (céleris, oignons, carottes), d'alcool de riz, d'épices (cumin, piment, échalote, gingembre, poivre de SiChuan...) puis cuite au four à feu doux pour lui donner une couleur dorée, un aspect croustillant et un goût savoureux",
+      "price": 20.00
+    },
+    {
+      "name": "Légumes du Marché façon Chef (spécialité La Porcelaine)",
+      "desc": "Légumes frais de saison sautés au wok, croquants et savoureux",
       "price": 15.00
     },
     {
-      "name": "Jiang  nouilles à la sauce sautée 炸酱面",
-      "price": 10.50
-    }
-  ],
-  "soupe": [
-    {
-      "name": "Soupe de Pékin 酸辣汤",
-      "price": 6.00
+      "name": "La La-Crevettes, sauce épicée (Spécialité de la province de SiChuan)",
+      "desc": "Crevettes frites au wok, puis sautées avec ses légumes croquants et une variété d’épices de la région du SiChuan",
+      "price": 18.00
     },
     {
-      "name": "Soupe de maïs 玉米汤",
-      "price": 6.00
-    }
-  ],
-  "accompagnement": [
-    {
-      "name": "Riz nature 白米饭",
-      "price": 1.50
-    },
-    {
-      "name": "Riz cantonais 炒饭",
-      "price": 2.50
-    },
-    {
-      "name": "Riz d’haricots rouges 豆饭",
-      "price": 2.00
+      "name": "GongBao Poulet (Poulet impérial, spécialité de la province de SiChuan)",
+      "desc": "Poulet sauté et épicé, accompagné de divers légumes frais et de saison, de cacahuètes, ainsi que de piments",
+      "price": 15.00
     }
   ],
   "dessert": [
     {
-      "name": "Perles de Chine au lait de Coco 西米露",
-      "desc": "(Fruits exotiques)",
-      "price": 5.50
+      "name": "Gâteau à la fleur d’Osmanthus (Spécialité de la province de GuangDong)",
+      "desc": "Réalisé à partir d’un thé légèrement parfumé à la fleur d'osmanthus, sur son lit de perles de tapioca au lait de coco, avec son miel de fleurs",
+      "price": 8.00
     },
     {
-      "name": "Verrine perlée au chocolat 糯米糍",
-      "price": 5.50
+      "name": "Tiramisu baguettes 提拉米苏",
+      "price": 8.00
     },
     {
-      "name": "Gâteau Osmanthus au lait de coco 桂花糕",
-      "price": 5.00
+      "name": "Verrine de Perles de Chine",
+      "desc": "Une verrine composée de trois textures, perles de tapioca au lait de coco, mousse de fraise ou framboise, fraises du marché",
+      "price": 8.50
     },
     {
-      "name": "Rouleaux de Taro sauce caramel et chocolat 芋头甜圈",
-      "price": 5.90
-    },
-    {
-      "name": "Salade de fruits (fruits de saison)",
-      "desc": "(Fruits exotiques)",
+      "name": "Coupe de Glace (2 boules + chantilly + chocolat)",
       "price": 6.00
-    },
-    {
-      "name": "Boules de glaces (3 parfums aux choix)",
-      "price": 8.00
-    },
-    {
-      "name": "Thé goumand",
-      "price": 8.00
-    },
-    {
-      "name": "Café goumand",
-      "price": 8.00
     }
   ]
 }
